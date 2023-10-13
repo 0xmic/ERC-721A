@@ -10,7 +10,7 @@
 
 ### Implementation Details  
 
-- In the ERC721A _safeMint implementation, owner balances are updated only once, no matter how many NFTs are minted in the batch call.  
+- In the ERC721A `_safeMint` implementation, owner balances are updated only once, no matter how many NFTs are minted in the batch call.  
 - In the base ERC721 contract before, this assignment would have had to be done in a loop, one time for each NFT being minted in the batch group. Now it’s done in a single update.  
 
 ### Additional Costs  
